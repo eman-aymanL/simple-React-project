@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-onPrimary dark:bg-green-700 dark:text-white p-5 shadow-md transition-colors duration-300">
+    <nav className="bg-onPrimary dark:bg-emerald-700 dark:text-white p-5 shadow-md transition-colors duration-300">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <NavLink to="/home" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white ">
