@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-onPrimary dark:bg-emerald-700 dark:text-white p-5 shadow-md transition-colors duration-300">
+    <nav className="bg-onPrimary dark:bg-red-700 dark:text-white p-5 shadow-md transition-colors duration-300">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <NavLink to="/home" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white ">
@@ -15,7 +15,6 @@ export default function Navbar() {
           </span>
         </NavLink>
 
-        {/* زر الهامبرجر */}
         <button
           type="button"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -27,7 +26,6 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* القائمة الجانبية */}
         <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-multi-level">
           <ul className="md:h-12 rounded-lg text-center flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 bg-onPrimary dark:bg-emerald-700 dark:text-white">
             <li className='flex items-center h-12'>
