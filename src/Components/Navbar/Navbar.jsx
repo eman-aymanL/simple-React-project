@@ -27,7 +27,7 @@ export default function Navbar() {
         </button>
 
         <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-multi-level">
-          <ul className="md:h-12 rounded-lg text-center flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 bg-onPrimary dark:bg-emerald-700 dark:text-white">
+          <ul className="md:h-12 rounded-lg text-center flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 bg-onPrimary dark:bg-emerald-700 dark:text-white transition-colors duration-300">
             <li className='flex items-center h-12'>
               <NavLink
                 to="/about"
